@@ -42,11 +42,7 @@
                 .buttons {
                     text-align: center;
                 }
-
-
             }
-
-
 
             body {
 
@@ -58,33 +54,22 @@
                 letter-spacing: 0.02em;
                 font-weight: 300;
                 text-align: left;
-
             }
 
             h1 {
                 font-size: 96px;
                 color: #FFB7C5;
                 padding-top: 35px;
-
-
-
             }
 
             h2 {
                 font-size: 48px;
-
-
             }
-
-
 
             h3 {
                 font-size: 24px;
                 opacity: 0.7;
                 display: block;
-
-
-
             }
 
             h1,
@@ -92,8 +77,8 @@
             h3 {
                 text-align: center;
                 margin: 0;
+                margin-top: 30px;
             }
-
 
             .navigation-links a {
                 margin: 20px;
@@ -108,13 +93,10 @@
                 display: flex;
                 justify-content: center;
                 padding-bottom: 25px;
-
-
             }
 
             .navbar li a:hover {
                 background-color: #f2f2f2;
-
             }
 
 
@@ -133,7 +115,6 @@
             .about-link {
                 color: var(--primary-color);
                 border: 1px solid var(--primary-color);
-
             }
 
             .homepage-link {
@@ -155,9 +136,6 @@
                 font-size: 18px;
                 line-height: 1.5;
                 color: #999999;
-
-
-
             }
 
             .mb-3 {
@@ -166,17 +144,18 @@
 
             .buttons .btn.btn-primary:hover {
                 background-color: white;
-                /* Set the desired background color */
                 border-color: #FFB7C5;
-                /* Set the desired border color */
                 color: #FFB7C5;
+            }
+
+            .navbar .nav-item .dropdown-menu {
+                border: none;
             }
         </style>
     </head>
 
     <body>
         <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
-
             <div class=" container">
                 <a class="navbar-brand" href="#"><img src="html-logo.png" alt="profile-logo" class="photo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -197,23 +176,29 @@
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Coding Playground</a>
                         </li>
-
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                DIY Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="educators.html">Educators</a></li>
+                                <li><a class="dropdown-item" href="learners.html">Learners</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <br />
         <br />
-
         <div class="bold-titles">
-
             <h1>Váleri Calhau</h1>
             <h3> Front-end developer, based in UK</h3>
         </div>
         <div class="navigation-links">
             <a href="about.html#contact" class="contact-link">Connect</a>
             <a href="about.html" class="about-link">My Story</a>
-        </div>
         </div>
         <div class="container mb-5">
             <div class="row">
@@ -227,13 +212,11 @@
                     </div>
                     <p class=" ps-4 pt-5 pe-4 pb-0">
                         Last upadated May 2023
-
                     </p>
                     <div class="buttons">
                         <button type="button" class="btn btn-primary ms-4 contact-link mb-5" style="
                   --bs-btn-bg:#FFB7C5;
-                  --bs-btn-border-color: #FFB7C5;
-                ">
+                  --bs-btn-border-color: #FFB7C5;">
                             Launch Portie Portfolio
                         </button>
                     </div>
@@ -250,14 +233,11 @@
                     </div>
                     <p class="ps-4 pt-5 pe-4 pb-0">
                         Last updated June 2023
-
                     </p>
                     <div class="buttons">
                         <button type="button" class="btn btn-primary ms-4 contact-link mb-5" style="
                   --bs-btn-bg: #FFB7C5;
-                  --bs-btn-border-color: #FFB7C5;
-                ">
-
+                  --bs-btn-border-color: #FFB7C5;">
                             Launch NowCast app
                         </button>
                     </div>
@@ -265,8 +245,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <img src="cassettes.png"
-                        alt="Cassettes Revival Project where I showcase some of my collection"
+                    <img src="cassettes.png" alt="Cassettes Revival Project where I showcase some of my collection"
                         class="img-fluid rounded-2" />
                 </div>
                 <div class="col-sm-6">
@@ -279,8 +258,7 @@
                     <div class="buttons">
                         <button type="button" class="btn btn-primary ms-4 contact-link mb-5" style="
                   --bs-btn-bg: #FFB7C5;
-                  --bs-btn-border-color: #FFB7C5;
-                ">
+                  --bs-btn-border-color: #FFB7C5;">
                             Launch Vintage Vibe app
                         </button>
                     </div>
@@ -288,8 +266,16 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    var dropdownToggleList = [].slice.call(document.querySelectorAll('[data-bs-toggle="dropdown"]'));
+                    dropdownToggleList.map(function (dropdownToggle) {
+                        return new bootstrap.Dropdown(dropdownToggle);
+                    });
+                });
+
+            </script>
     </body>
 
 </html>
