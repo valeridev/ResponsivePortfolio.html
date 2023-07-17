@@ -17,7 +17,6 @@
                 letter-spacing: 0.25em;
 
                 animation: typing 3s steps(40, end);
-
             }
 
             @keyframes typing {
@@ -57,8 +56,6 @@
                     display: none;
                 }
 
-
-
                 .titles {
                     display: none;
                 }
@@ -66,16 +63,7 @@
                 .buttons {
                     text-align: center;
                 }
-
-
-
-
-
-
-
             }
-
-
 
             body {
 
@@ -87,34 +75,22 @@
                 letter-spacing: 0.02em;
                 font-weight: 300;
                 text-align: left;
-
             }
 
             h1 {
                 font-size: 96px;
                 color: #FFB7C5;
                 padding-top: 35px;
-
-
-
-
             }
 
             h2 {
                 font-size: 48px;
-
-
             }
-
-
 
             h3 {
                 font-size: 24px;
                 opacity: 0.7;
                 display: block;
-
-
-
             }
 
             h1,
@@ -142,15 +118,12 @@
                 display: flex;
                 justify-content: center;
                 padding-bottom: 25px;
-
-
             }
 
             .navbar li a:hover {
                 background-color: #f2f2f2;
 
             }
-
 
             :root {
                 --primary-color: #FFB7C5;
@@ -167,7 +140,6 @@
             .about-link {
                 color: var(--primary-color);
                 border: 1px solid var(--primary-color);
-
             }
 
             .homepage-link {
@@ -190,9 +162,6 @@
                 line-height: 1.5;
                 color: white;
                 ;
-
-
-
             }
 
             .mb-3 {
@@ -201,9 +170,9 @@
 
             .buttons .btn.btn-primary:hover {
                 background-color: white;
-                /* Set the desired background color */
+
                 border-color: #FFB7C5;
-                /* Set the desired border color */
+
                 color: #FFB7C5;
             }
 
@@ -224,6 +193,10 @@
             a {
                 color: #FFB7C5;
             }
+
+            .navbar .nav-item .dropdown-menu {
+                border: none;
+            }
         </style>
 
     </head>
@@ -240,7 +213,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">My Story</a>
@@ -249,9 +222,18 @@
                             <a class="nav-link" href="about.html#email">Connect</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Coding Playground</a>
+                            <a class="nav-link active" href="blog.html">Coding Playground</a>
                         </li>
-
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                DIY Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="educators.html">Educators</a></li>
+                                <li><a class="dropdown-item" href="learners.html">Learners</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -263,7 +245,6 @@
             <br />
 
             <h3>The Sustainable Adventures of Stardew Valley </h3>
-
         </div>
         <p>Once upon a time, in a magical village called Stardew Valley, there lived a group of young farmers who
             discovered the
