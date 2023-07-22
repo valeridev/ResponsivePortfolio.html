@@ -8,13 +8,24 @@
 
         <title>Let's Party</title>
         <style>
-             a {
+            .backhomepage {
+                max-width: 100px;
+                margin: 0 auto;
+                padding: 10px;
+                border-radius: 4px;
+                background: white;
+                opacity: 0.5;
+                letter-spacing: 0.1em;
+            }
+
+            a {
                 color: #585D65;
             }
 
             a:hover {
-                color: white;
+                color: #ee54c0;
             }
+
             body {
                 padding: 20px;
                 background: linear-gradient(90.7deg, rgb(255, 253, 218) 1.9%, rgb(246, 210, 255) 39.3%, rgb(152, 222, 254) 64.7%, rgb(251, 255, 210) 100.8%);
@@ -56,6 +67,13 @@
                 color: #d8800c;
             }
 
+            footer {
+                text-align: center;
+                margin: 10px;
+                color: #ee54c0;
+                font-size: 20px;
+            }
+
             @media only screen and (max-width: 480px) {
                 .age {
                     font-size: 32px;
@@ -65,21 +83,32 @@
     </head>
 
     <body>
-        <div class="container" style="text-align: center;">
-                <a href="index.html" class="homepage-link">Back to homepage</a>
-            </div>
+
+        <div class="backhomepage" style="text-align: center;">
+            <a href="index.html" class="homepage-link"><strong>Back to homepage</strong></a>
+        </div>
+        </div>
         <h2>JOIN US</h2>
         <h2>TO CELEBRATE</h2>
         <div class="age">
             <h1>MY</h1>
-            <h1>10th BIRTHDAY</h1>
+            <h1>21st BIRTHDAY</h1>
         </div>
         <br />
         <br />
-        <div class="date"> <strong>December 29th, 2023 at 3pm</strong>
+        <div class="date"> <strong>November 29th, 2023 at 3pm</strong>
         </div>
         <p>RSVP 📱<a href="sms:+123456789">32107893465</a></p>
         <div id="countdown"></div>
+
+        <br />
+        <strong style="color: #ee54c0;"> ***</strong>
+        <br />
+        <footer>Coded by <a href="https://github.com/valeridev" target="_blank">Váleri
+                Calhau</a> &copy;
+            2023
+
+        </footer>
         <script>
 
             const targetDate = new Date('December 29, 2023 15:00:00').getTime();
