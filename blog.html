@@ -29,41 +29,6 @@
                 }
             }
 
-            @media (max-width: 992px) {
-                h1 {
-                    font-size: 32px !important;
-                }
-            }
-
-            @media (max-width: 576px) {
-                h1 {
-                    font-size: 32px !important;
-                }
-
-                h2 {
-                    font-size: 36px !important;
-                }
-
-                h3 {
-                    font-size: 18px !important;
-                }
-
-                .bold-titles {
-                    padding-top: 85px !important;
-                }
-
-                .navigation-links {
-                    display: none;
-                }
-
-                .titles {
-                    display: none;
-                }
-
-                .buttons {
-                    text-align: center;
-                }
-            }
 
             body {
 
@@ -197,8 +162,73 @@
             .navbar .nav-item .dropdown-menu {
                 border: none;
             }
-             .active {
+
+            .active {
                 color: var(--primary-color) !important;
+            }
+
+            hr {
+                border: 1px solid #FFB7C5;
+
+            }
+
+            .copy-text-center {
+                color: white;
+                text-align: center;
+            }
+
+            .email-link {
+                text-decoration: none;
+                font-size: 28px;
+                display: flex;
+                justify-content: center;
+                margin-top: 60px;
+                margin-bottom: 30px;
+                color: #999999;
+            }
+
+            .email-link:hover {
+                text-decoration: underline;
+            }
+
+            #email {
+                outline: none;
+            }
+
+            @media (max-width: 992px) {
+                h1 {
+                    font-size: 32px !important;
+                }
+            }
+
+            @media (max-width: 576px) {
+                h1 {
+                    font-size: 32px !important;
+                }
+
+                h2 {
+                    font-size: 36px !important;
+                }
+
+                h3 {
+                    font-size: 18px !important;
+                }
+
+                .bold-titles {
+                    padding-top: 85px !important;
+                }
+
+                .navigation-links {
+                    display: none;
+                }
+
+                .titles {
+                    display: none;
+                }
+
+                .buttons {
+                    text-align: center;
+                }
             }
         </style>
 
@@ -271,18 +301,29 @@
         </h2>
         </p>
         <h2>Can you make a new avatar to join in the game?</h2>
+        <br />
         <h3> Here is mine! ^-^ <img src="../images/portrait (1).png" alt="I created my own avatar"></h3>
 
+        <hr />
 
+        <a href="mailto:valeri.calhau@gmail.com" class="email-link" id="email">valeri.calhau@gmail.com</a>
+        <p class="contact-links" style="text-align: center;">
+            <a href="https://github.com/valeridev" target="_blank"
+                style="color: #999999;text-decoration: none; margin-right: 10px;"><i class="fab fa-github"></i>
+                GitHub</a>
+            <a href="https://www.linkedin.com//in/v%C3%A1leri-calhau-9279b927a/" target="_blank"
+                style="color: #999999;text-decoration: none; margin-left: 10px;"><i class="fab fa-linkedin"></i>
+                LinkedIn</a>
+        </p>
+        <br />
 
+        <div class="copy-text-center">© 2023 Coded by Váleri Calhau. </div>
 
+<script>
 
-
-        <script>
-            // Optional: Delay the animation start
             setTimeout(function () {
                 document.getElementById("typewriter").style.animationPlayState = "running";
-            }, 1000); // Adjust the delay (in milliseconds)
+            }, 1000); 
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
