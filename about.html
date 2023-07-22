@@ -8,32 +8,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
+
         <style>
-            @media (max-width: 576px) {
-                h1 {
-                    font-size: 48px !important;
-                }
-
-                h2 {
-                    font-size: 36px !important;
-                }
-
-                h3 {
-                    font-size: 18px !important;
-                }
-
-                .about-paragraphs {
-                    display: none !important;
-                }
-
-                .top-paragraph {
-                    display: block;
-                    text-align: center;
-                    font-size: 18px;
-                    margin: 20px auto;
-                }
-            }
-
             :root {
                 --primary-color: #FFB7C5;
                 --secondary-color: #898989;
@@ -60,6 +36,10 @@
             h1 {
                 font-size: 96px;
                 padding-top: 50px
+            }
+
+            h2 {
+                color: #585d65;
             }
 
             h3 {
@@ -99,9 +79,10 @@
             .email-link {
                 text-decoration: none;
                 font-size: 28px;
-                color: var(--primary-color);
+                color: var(--secondary-color);
                 display: flex;
                 justify-content: center;
+                margin-top: 40px;
             }
 
             .email-link:hover {
@@ -167,6 +148,131 @@
             .active {
                 color: var(--primary-color) !important;
             }
+
+            .copy-text-center {
+                color: white;
+                text-align: center;
+            }
+
+            .form {
+                background-color: #EFE4D2;
+                padding: 100px;
+                margin-top: 20px;
+
+            }
+
+
+
+            form,
+            label,
+            input,
+            textarea,
+            button {
+                margin: 0;
+                padding: 0;
+                border: none;
+                font-family: Arial, sans-serif;
+                color: #585D65;
+            }
+
+
+            form {
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #FFB7C5;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+
+
+            textarea {
+                height: 150px;
+            }
+
+            button {
+                background-color: #FFB7C5;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+            }
+
+            button:hover {
+                background-color: white;
+                color: #FFB7C5;
+            }
+
+            @media (max-width: 576px) {
+                h1 {
+                    font-size: 48px !important;
+                }
+
+                h2 {
+                    font-size: 36px !important;
+                }
+
+                h3 {
+                    font-size: 18px !important;
+                }
+
+                .about-paragraphs {
+                    display: none !important;
+                }
+
+                .top-paragraph {
+                    display: block;
+                    text-align: center;
+                    font-size: 18px;
+                    margin: 20px auto;
+                }
+            }
+
+            @media (max-width: 576px) {
+                form {
+                    padding: 10px;
+                }
+
+                input[type="text"],
+                input[type="email"],
+                textarea {
+                    padding: 6px;
+                }
+
+                textarea {
+                    height: 100px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .contact-links {
+                    display: none;
+                }
+            }
         </style>
     </head>
 
@@ -203,7 +309,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="educators.html">Educators</a></li>
                                 <li><a class="dropdown-item" href="learners.html">Learners</a></li>
-                                 <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -279,22 +385,49 @@
             inspiring role models and cultivating an inclusive environment, we can bridge the gender gap and nurture a
             generation of
             confident female coders who will shape the future of Brazil's digital landscape.</p>
-        <hr />
+
+
+
+        <div class="form">
+            <h2 id="contact"><i class="fa-thin fa-at"></i>Send a Message</h2>
+
+            <br />
+            <form name="contact-form" method="POST" data-netlify="true" netlify>
+                <input type="hidden" name="form-name" value="contact-form" />
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required maxlength="500"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
         <br />
         <h2 id="contact"><i class="fa-thin fa-at"></i> Connect with me</h2>
-        <br />
         <a href="mailto:valeri.calhau@gmail.com" class="email-link" id="email">valeri.calhau@gmail.com</a>
-        <br />
         <p class="contact-links" style="text-align: center;">
             <a href="https://github.com/valeridev" target="_blank"
-                style="color:#FFB7C5;text-decoration: none; margin-right: 10px;"><i class="fab fa-github"></i>
+                style="color:var(--secondary-color);text-decoration: none; margin-right: 10px;"><i
+                    class="fab fa-github"></i>
                 GitHub</a>
             <a href="https://www.linkedin.com//in/v%C3%A1leri-calhau-9279b927a/" target="_blank"
-                style="color:#FFB7C5;text-decoration: none; margin-left: 10px;"><i class="fab fa-linkedin"></i>
+                style="color:var(--secondary-color);text-decoration: none; margin-left: 10px;"><i
+                    class="fab fa-linkedin"></i>
                 LinkedIn</a>
         </p>
         <br />
-        <div class="copy text-center">© 2023 Coded by Váleri Calhau. </div>
+
+        <div class="copy-text-center">© 2023 Coded by Váleri Calhau. </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
                 document.addEventListener("DOMContentLoaded", function () {
