@@ -13,21 +13,30 @@
             }
 
             .homepage-link {
-                color: var(--primary-color);
+                color: rgb(63, 61, 61);
                 text-align: center;
                 display: block;
                 text-decoration: underline;
-                margin-bottom: 10px;
-                margin-left: 100px;
+                margin-bottom: 30px;
+                margin-left: 60px;
                 margin-top: 30px;
                 padding-top: 90px;
+                font-weight: 900;
+                letter-spacing: 0.2em;
+                padding-top: 5px;
+
             }
 
+
             h1 {
-                color: #898989;
+                color: white;
                 text-align: center;
-                padding-left: 100px;
+                margin-left: 50px;
+                letter-spacing: 0.4em;
+                font-size: 46px;
+                padding-bottom: 20px;
             }
+
 
             .image-container {
                 display: inline;
@@ -78,52 +87,118 @@
             .all {
                 margin-top: 10%;
             }
-             footer {
+
+            footer {
                 text-align: center;
-                margin: 40px;
-                color: #ee54c0;
+
+                color: #F5E9BF;
                 font-size: 20px;
+
+
+
+                margin: 40px auto;
+
+
             }
 
             a {
-                color: #585D65;
+                color: #f1849a;
             }
 
             a:hover {
-                color: #ee54c0;
+                color: white;
+            }
+
+            .wrapper {
+
+                max-width: 100%;
+                margin: 0 auto;
+
+
+
+
+            }
+
+            .heart {
+                color: #f1849a;
+            }
+
+            .year {
+                color: white;
+            }
+
+            body {
+
+
+                margin-left: 100px;
+                padding-right: 60px;
+                background-image: url(Dandelion2.png);
+
+
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                display: flex;
+                /* Use flexbox for the container */
+                justify-content: center;
+                /* Center the content horizontally */
+                align-items: center;/
+            }
+
+            @media (max-width: 460px) {
+                footer {
+                    font-size: 10px;
+                    margin-left: 110px;
+                }
+
+                h1 {
+
+                    font-size: 30px;
+                }
+
+                .homepage-link {
+
+
+                    margin-left: 110px;
+                }
+
             }
         </style>
     </head>
 
     <body>
-        <a href="index.html" class="homepage-link">Back to homepage</a>
-        <h1>Celebrating Special Moments: Online Birthday Invitations Unleashed!</h1>
+        <div class="wrapper">
+            <a href="index.html" class="homepage-link">Back to homepage</a>
+            <h1>*Gallery*</h1>
 
-        <div class="all">
-            <div class="image-container">
-                <img src="Screenshot 2023-07-21 at 09.57.11.png" width="200" height="400" alt="bithday invitation1"
-                    class="parque-lage">
-                <img src="Screenshot 2023-07-21 at 10.20.45.png" width="200" height="400" alt="birthday invitation2"
-                    class="lapa">
-                <img src="Screenshot 2023-07-21 at 02.49.45.png" width="200" height="400" alt="birthday invitation3"
-                    class="paraty">
-                <img src="Screenshot 2023-07-21 at 02.40.06.png" width="200" height="400" alt="birthday invitation4"
-                    class="selaron">
+            <div class="all">
+                <div class="image-container">
+                    <img src="Screenshot 2023-07-21 at 09.57.11.png" width="200" height="400" alt="bithday invitation1"
+                        class="parque-lage">
+                    <img src="Screenshot 2023-07-21 at 10.20.45.png" width="200" height="400" alt="birthday invitation2"
+                        class="lapa">
+                    <img src="Screenshot 2023-07-21 at 02.49.45.png" width="200" height="400" alt="birthday invitation3"
+                        class="paraty">
+                    <img src="Screenshot 2023-07-21 at 02.40.06.png" width="200" height="400" alt="birthday invitation4"
+                        class="selaron">
+                </div>
+                <div class="image-container-2">
+                    <img src="Screenshot 2023-07-21 at 02.30.53.png" width="200" height="400" alt="birthday invitation5"
+                        class="petropolis">
+                    <img src="Screenshot 2023-07-21 at 02.44.34.png" width="200" height="400" alt="birthday invitation6"
+                        class="teatro">
+                    <img src="Screenshot 2023-07-21 at 10.58.56.png" width="200" height="400" alt="" class="museu">
+                </div>
             </div>
-            <div class="image-container-2">
-                <img src="Screenshot 2023-07-21 at 02.30.53.png" width="200" height="400" alt="birthday invitation5"
-                    class="petropolis">
-                <img src="Screenshot 2023-07-21 at 02.44.34.png" width="200" height="400" alt="birthday invitation6"
-                    class="teatro">
-                <img src="Screenshot 2023-07-21 at 10.58.56.png" width="200" height="400" alt="" class="museu">
-            </div>
+            <br />
+            <footer><span class="year">2023</span> Coded by <a href="https://github.com/valeridev"
+                    target="_blank">Váleri
+                    Calhau</a> <strong>&copy </strong> With thanks to all who participated in this
+                Project <span class="heart">♡</span>
+            </footer>
+
         </div>
-         <br />
-        <footer>Coded by <a href="https://github.com/valeridev" target="_blank">Váleri
-                Calhau</a> &copy;
-            2023
 
-        </footer>
     </body>
 
 </html>
