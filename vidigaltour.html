@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Noto+Serif+Display:ital,wght@1,200&family=PT+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Prism&family=Urbanist:wght@100&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="src/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/e9dc0bc112.js" crossorigin="anonymous"></script>
+        <title>Travel Project about Vidigal, a Community in Rio de Janeiro that has been pacified and is very popular
+            for
+            tourists.</title>
+
+        <meta property="og:title" content="Your Website Title">
+        <meta property="og:description" content="Your website description here">
+        <meta property="og:image" content="URL_TO_YOUR_WEBSITE_IMAGE">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Your Website Title">
+        <meta name="twitter:description" content="Your website description here">
+        <meta name="twitter:image" content="URL_TO_YOUR_WEBSITE_IMAGE">
+
+        <style>
+            body {
+                font-family: "Poppins", "sans-serif" !important;
+
+                background: #008e3d !important;
+            }
+
+            .container {
+                max-width: 1400px;
+                margin: 0 auto;
+                background: #f1bd03;
+                margin-top: 30px;
+                padding-top: 15px;
+            }
+
+            header {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                    url("../images/faveladovidigal.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                color: white;
+                text-align: center;
+                padding: 200px 0;
+            }
+
+            header h1 {
+                font-weight: 700;
+                font-size: 96px;
+                line-height: 1;
+                margin: 30px 0;
+            }
+
+            header h2 {
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 1.5px;
+            }
+
+            header h3 {
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 1.5;
+                letter-spacing: 5px;
+                margin: 0;
+            }
+
+            header a {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.5;
+                text-align: center;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                background-color: white;
+                text-decoration: none;
+                color: #272044;
+                padding: 16px 32px;
+                display: inline-block;
+                margin-top: 32px;
+                border-radius: 4px;
+            }
+
+            footer {
+                color: white;
+                background-image: linear-gradient(rgba(39, 32, 68, 0.7),
+                        rgba(39, 32, 68, 0.7)),
+                    url(../images/vidigalfooter.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                margin-right: 10px;
+                margin-left: 10px;
+                padding: 10px 0;
+            }
+
+            footer h3 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                margin-left: 60px;
+            }
+
+            footer p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                opacity: 0.6;
+                margin-left: 60px;
+            }
+
+            footer li {
+                list-style: none;
+                margin-left: 60px;
+                padding: 0;
+            }
+
+            footer ul {
+                padding: 0;
+            }
+
+            footer a {
+                color: white;
+                opacity: 0.6;
+            }
+
+            section {
+                max-width: 1400px;
+                margin: 0 auto;
+                padding-left: 20px;
+                padding-top: 15px;
+
+                padding-bottom: 45px;
+                padding-right: 15px;
+            }
+
+            section.secondary {
+                background: #f1f1e8;
+                background: #f5f2f1;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 2fr 2fr;
+                grid-gap: 64px;
+                padding-top: 70px;
+            }
+
+            .grid grid-2-columns {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .grid .grid-2-columns,
+            img {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+                border-radius: 8px;
+            }
+
+            a:hover {
+                cursor: pointer;
+                color: white;
+                transition: transform 0.1s;
+                opacity: 0.8;
+                text-decoration-line: none;
+            }
+
+            main {
+                background-color: white;
+                padding-bottom: 0px;
+            }
+
+            main h2 {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 5px;
+                color: #272044;
+                opacity: 0.3;
+                text-transform: uppercase;
+                margin: 0;
+                padding-top: 20px;
+            }
+
+            main p {
+                font-style: poppins;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #272044;
+                opacity: 0.7;
+                font-size: 18px;
+                text-align: justify;
+            }
+
+            main h3 {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 1.5;
+                color: #272044;
+                margin: 0;
+            }
+
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 0;
+                margin-right: 15px;
+                margin-left: 15px;
+                padding-top: 40px;
+            }
+
+            .card {
+                width: calc(33.33% - 30px);
+                margin: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+            }
+
+            .my-button {
+                background-color: white !important;
+                color: black !important;
+                border: none !important;
+            }
+
+            .my-button:hover {
+                cursor: pointer !important;
+            }
+
+            .rating {
+                color: #fdb243;
+            }
+
+            .grid-video {
+                width: 75%;
+                aspect-ratio: 16/9;
+                display: block;
+                margin: 0 auto;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+
+                border-radius: 8px;
+            }
+
+            .grid-container-1 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 5px;
+                padding-bottom: 20px;
+            }
+
+            .grid-container-2 {
+                margin-top: 5px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 5px;
+            }
+
+            .cardandvideos {
+                background: #ffe4b5;
+                background: #f5f2f1;
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 0px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+            .image-column,
+            .middle-column,
+            .text-column {
+                flex: 1;
+                padding: 10px;
+            }
+
+            .image-text {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .text-column p {
+                text-align: justify;
+            }
+
+            .image-column img,
+            .middle-column p,
+            .text-column p {
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .enlarge-on-hover {
+                transition: transform 0.4s ease-in-out;
+            }
+
+
+            .enlarge-on-hover:hover {
+                transform: scale(1.3);
+            }
+
+            form,
+            label,
+            input,
+            textarea,
+            button {
+                margin: 0;
+                padding: 0;
+                border: none;
+                font-family: Arial, sans-serif;
+                color: #585d65;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            #contact {
+                text-align: center;
+            }
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #185890;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+
+            textarea {
+                height: 150px;
+            }
+
+            button {
+                background-color: #185890;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 30px !important;
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+            }
+
+            button:hover {
+                background-color: white;
+                color: #185890;
+            }
+
+            .form-container {
+                width: 100%;
+                max-width: 1400px;
+                margin: 0 auto;
+                box-sizing: border-box;
+
+                padding: 50px;
+                padding-left: 30%;
+                padding-right: 30%;
+
+                margin-top: 0px;
+                background: #ebedee;
+            }
+
+            .sharing {
+                background: #d7964f;
+                padding-bottom: 20px;
+            }
+
+            @media screen and (max-width: 768px) {
+                .form-container {
+
+                    max-width: 100%;
+                    padding: 20px;
+                }
+            }
+
+            @media (max-width: 800px) {
+                .enlarge-on-hover:hover {
+                    transform: scale(1);
+                }
+            }
+
+            @media (max-width: 768px) {
+                .about-site {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 900px) {
+
+                .grid-container-1,
+                .grid-container-2 {
+                    grid-template-columns: 1fr;
+                    grid-gap: 30px;
+                }
+            }
+
+            @media (max-width: 800px) {
+                header {
+                    padding: 60px 0;
+                }
+
+                header h1 {
+                    font-size: 48px;
+                }
+
+                header h2 {
+                    font-size: 20px;
+                }
+
+                header h3 {
+                    font-size: 12px;
+                }
+
+                .grid grid-2-columns {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            .grid grid-2-columns p {
+                padding-right: 20px;
+            }
+
+            @media (max-width: 480px) {
+                footer ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                footer li {
+                    flex-basis: calc(70% - 10px);
+                    margin-bottom: 10px;
+                    text-decoration-line: none;
+                }
+
+                footer p {
+                    font-size: 16px;
+                    padding-top: 10px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                .grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            @media (max-width: 1200px) {
+                .grid-2-columns {
+                    grid-template-columns: 1fr;
+                    grid-gap: 0;
+                }
+            }
+
+            @media (max-width: 360px) {
+                .grid-2-columns img {
+                    max-width: 92%;
+                    height: auto;
+                }
+            }
+
+            @media only screen and (min-width: 820px) {
+                footer {
+                    margin-right: 0px;
+                    margin-left: 0px;
+                }
+            }
+
+            @media only screen and (min-width: 360px) {
+                footer {
+                    margin-right: 0px;
+                    margin-left: 0px;
+                }
+            }
+
+            @media screen and (max-width: 993px) {
+                .row {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .image-column img {
+                    max-width: 40%;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .image-column img {
+                max-width: 50%;
+                height: auto;
+            }
+
+
+            .middle-column p,
+            .text-column p,
+            .image-text {
+                margin: 0px;
+                padding-top: 20px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            @media (max-width: 817px) {
+                .card-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .card {
+                    width: 75%;
+                    margin-bottom: 10px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h3>.TRAVEL.</h3>
+                <h1>Welcome to Vidigal</h1>
+                <h2>The Rio de Janeiro's Riviera</h2>
+                <a href="#scroll-to-cardandvideos" style="color: #000;">Learn more</a>
+
+            </header>
+            <main>
+
+                <section class="grid grid-2-columns">
+                    <div class="enlarge-on-hover">
+                        <img src="images/art.png" width="330" height="260" alt="morro dois irmãos">
+
+                        <figure>
+                            <figcaption style="text-align: center;">Graffiti Art Work In Vidigal</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <h2 style="padding-top: 0px;">Why Vidigal?</h2>
+
+                        <h3>Two Brothers Hill</h3>
+                        <p>It offers stunning 360-degree views. Place of Vidigal Community,
+                            the first integrated,
+                            sustainable, and resilient favela in the country, attracting famous names like David
+                            Beckham
+                            and Madonna. Since its
+                            pacification in 2011, tourism has thrived, drawn to the captivating landscapes and
+                            vibrant
+                            community. Vidigal boasts
+                            Sitie Park, an eco-friendly space transformed from a landfill.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            You can hike up Two Brothers
+                            Hill for breathtaking
+                            scenery and enjoy performances at Mirante do Avrão. Accommodation options range from
+                            luxurious hotels like Sheraton to
+                            cozy hostels like Vidigal Varanda. Don't miss the unforgettable sunset views at Bar da
+                            Laje,
+                            and explore diverse dining
+                            options, from upscale Alto Vidigal Brasil to local eateries. Vidigal is a perfect blend
+                            of
+                            natural beauty, culture, and
+                            sustainability, offering an authentic experience in Rio de Janeiro.
+                            Bem-vindo! ♡
+
+                        </p>
+                    </div>
+
+                </section>
+
+                <section class="secondary">
+                    <h2 class="text-center">E N J O Y</h2>
+                    <h3 class="text-center">Cultural Immersion</h3>
+                    <p>Experience true cultural immersion near Vidigal with a variety of Portuguese courses
+                        tailored
+                        to
+                        foreigners of all ages.
+                        The area is home to reputable language schools such as Caminhos Language Centre, Português
+                        Carioca, and Rio and Learn.
+                        These schools not only offer comprehensive language programs but also organize exciting outings
+                        and activities after
+                        class, providing an enriching experience of the local culture.
+
+                    </p>
+
+
+
+
+                </section>
+
+
+                <div class="row">
+                    <div class="image-column">
+                        <img src="images/capoeira.png" alt="Projeto Capoeira">
+                        <div class="image-text">
+                            <p>Trying Capoeira can be a great way to experience the rich cultural heritage and physical
+                                benefits that this
+                                Afro-Brazilian martial art offers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="middle-column">
+                        <p>Capoeira originated in Brazil during the 16th century among African slaves. Forced to work on
+                            sugarcane plantations,
+                            they used their traditional combat and dance forms for self-defense.
+                            To disguise their martial practice, they combined fighting movements with music and dance,
+                            creating Capoeira. Over time, Capoeira evolved, incorporating elements from various
+                            cultures.</p>
+                    </div>
+
+                    <div class="text-column">
+                        <p>
+                            It is common for Capoeira groups and schools to promote events, workshops, and classes in
+                            various communities, including
+                            Vidigal.
+                            Capoeira events can include demonstrations, performances, workshops, and cultural
+                            celebrations.
+
+
+                            If you're exploring Rio de Janeiro and looking to experience the vibrant world of Capoeira,
+                            consider trying a session at
+                            Projeto Vidigal Capoeira.</p>
+
+                        </p>
+                    </div>
+                </div>
+            </main>
+            <div class="cardandvideos" id="scroll-to-cardandvideos">
+                <div class="card-container">
+
+
+                    <div class="card">
+                        <img src="images/main-morrodoisirmaos.png" alt="Image 1">
+
+                        <a href="https://www.tripadvisor.co.uk/Attraction_Review-g303506-d2352264-Reviews-Morro_Dois_Irmaos-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
+                            class="btn btn-primary my-button" target="_blank">The Two Brothers Hill</a>
+
+                    </div>
+
+                    <div class="card">
+
+                        <img src="images/ipanema.png" alt="Image 2">
+
+                        <a href="https://www.tripadvisor.co.uk/Attraction_Review-g303506-d312071-Reviews-Ipanema_Beach-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
+                            class="btn btn-primary my-button" target="_blank">Ipanema Beach</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/sitie.png" alt="Image 3">
+
+                        <a href="https://www.tripadvisor.co.uk/Attraction_Review-g303506-d8469849-Reviews-Parque_e_Instituto_Sitie-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
+                            class="btn btn-primary my-button" target="_blank">Sitiê Eco Park</a>
+                    </div>
+
+                    <!-- Add more cards as needed -->
+                </div>
+
+                <section>
+
+                    <div class="grid-container-1">
+                        <iframe class="grid-video" id="video-1" src="https://www.youtube.com/embed/MJCUExCoLXo"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <iframe class="grid-video" id="video-2" src="https://www.youtube.com/embed/H1jG2lyuVdI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-container-2">
+                        <iframe class="grid-video" id="video-3" src="https://www.youtube.com/embed/yKcT1xIUVxk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <iframe class="grid-video" id="video-4" src="https://www.youtube.com/embed/aYNvEPZL7KU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <iframe class="grid-video" id="video-5" src="https://www.youtube.com/embed/NEzZaCdU__8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <section class="grid">
+                    <div>
+                        <h3>Hotspot<div class="rating">
+
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </h3>
+
+                        <ul>
+                            <li><a href="https://www.marriott.com/en-us/hotels/riosi-sheraton-grand-rio-hotel-and-resort/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
+                                    target="_blank">Sheraton Hotel</a>
+                            </li>
+                            <li><a href="https://mirantedoarvrao.com.br/wp/" target="">Mirante do Avrão</a></li>
+                            <li><a href="https://vistadomar.tripcombined.com/" target="">Hotel Vista do Mar</a></li>
+                            <li><a href="https://www.instagram.com/vidigalvarandashostel/?hl=en" target="_blank">Vidigal
+                                    Varanda Hostel</a>
+                            <li>
+                                <a href="https://bardalaje.rio/?lang=en" target="_blank">Bar da Laje</a>
+                            </li>
+                            <li>
+                                <a href="https://alto-vidigal-brasil.cluvi.com.br/" target="_blank">Alto Vidigal
+                                    Brasil</a>
+                            </li>
+                            <li><a href="https://www.tripadvisor.co.uk/Attraction_Review-g303506-d6533574-Reviews-Caminhos_Language_Centre-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
+                                    target="_blank"> Caminhos Language Centre</a>
+                            </li>
+                            <li><a href="https://www.portuguescarioca.com.br/" target="_blank">Português Carioca</a>
+                            <li><a href="https://rioandlearn.com/" target="_blank">Rio and Learn</a> </li>
+                            <li><a href="https://www.instagram.com/vidigalcapoeira/" target="_blank">Projeto
+                                    Capoeira Vidigal</a></li>
+                            <li><a href="https://www.shoppingleblon.com.br" target="_blank">Currency Converter</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div>
+                        <h3>About me</h3>
+                        <p>Memorable hike: <a href="https://visitandorra.com/en/nature/hiking-route-estany-de-jucla/"
+                                target="_blank">Juclar Lake</a>
+                        </p>
+                        <p>One song I know the lyrics by heart since 1997. <a href="#spotify-song"><strong>Listen to it
+                                    on
+                                    Spotify!</strong></a></p>
+                    </div>
+                    <div>
+                        <div class="about-site">
+                            <h3>About this website</h3>
+
+                            <p>Created during my daughter's solo trip to Rio!
+
+                            </p>
+                        </div>
+
+                </section>
+
+            </footer>
+
+
+            <div class="sharing">
+                <h4
+                    style="display: flex; align-items: center; justify-content: center; padding-top: 20px; padding:20px; color: white; letter-spacing: 0.3em; ">
+                    Share 🤍
+                </h4>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://vidigaltour.netlify.app/"
+                        target="_blank" style="margin-right: 10px" ;>
+
+                        <i class="fab fa-facebook"
+                            style="color: #e1e4ea; font-size: 24px; transition: transform 0.2s;"></i></a>
+
+
+                    <a href="https://twitter.com/intent/tweet?url=https://vidigaltour.netlify.app/" target="_blank"
+                        style="margin-right: 10px" ;>
+
+                        <i class="fab fa-twitter"
+                            style="color: #e1e4ea; font-size: 24px; transition: transform 0.2s;"></i>
+
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vidigaltour.netlify.app/"
+                        target="_blank">
+
+                        <i class="fab fa-linkedin"
+                            style="color: #e1e4ea; font-size: 24px; transition: transform 0.2s;"></i>
+
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="form-container">
+                <h2 id="contact" style="padding-top: 50px;"><i class="fa-regular fa-envelope"
+                        style="color: #585d65; padding-right:10px;"></i></i>Contact</h2>
+
+                <br />
+                <form name="contact-form " method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact-form" />
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required maxlength="500"></textarea>
+                    </div>
+                    <button type="submit" style="display: block; margin: 0 auto 50px;">Submit</button>
+                </form>
+            </div>
+
+
+
+
+
+
+
+            <div id="spotify-song">
+                <iframe style="border-radius:none !important;"
+                    src="https://open.spotify.com/embed/track/1xAhkrjdXA9yN74wnRBdzE?utm_source=generator" width="100%"
+                    height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+
+            <p>&copy; 2023 Coded by <a href="https://www.linkedin.com/in/v%C3%A1leri-calhau-9279b927a/" target="_blank"
+                    style="color: #262043; " onmouseover=" this.style.color='black'"
+                    onmouseout=" this.style.color='#008E3C'">Váleri
+                    Calhau</a></p>
+
+        </div>
+
+
+
+
+
+
+
+    </body>
+
+</html>
